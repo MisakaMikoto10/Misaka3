@@ -1,5 +1,6 @@
-# Violet-Bot
-![Violet Evergarden](https://user-images.githubusercontent.com/84166927/126068743-ff713e80-ebb3-4aa1-9888-5b5d67b78799.png)
+# Misaka-Bot
+
+
 
 
 ### Only For WhatsApp Group Chat
@@ -105,4 +106,4 @@ conn.logger.level = 'debug'
 <a href="https://github.com/Nurutomo/wabot-aq"><img alt="GitHub" src="https://img.shields.io/badge/NURUTOMO%20-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a>
 
 #### Master : 
-<a href="https://github.com/unx21/violet"><img alt="GitHub" src="https://img.shields.io/badge/UNX%20-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a>
+<a href="https://github.com/unx21/violet"><img alt="GitHub" src="https://img.shields.io/badge/Megane%20-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a>
