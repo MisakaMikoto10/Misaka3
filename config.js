@@ -1,8 +1,8 @@
-global.owner = ['62887436568613'] // Put your number here
+global.owner = ['6285780372455'] // Put your number here
 global.mods = [] // Want some help?
-global.prems = ['62887436568613'] // Premium user has unlimited limit
-global.player = ['62887436568613']
-global.wait = "[❗]  ```Wait a minute...```"
+global.prems = ['6285780372455'] // Premium user has unlimited limit
+global.player = ['6285780372455']
+global.wait = "[❗]  ```Chotto Matte...```"
 global.APIs = { // API Prefix
   // name: 'https://website'
   nrtm: 'https://nurutomo.herokuapp.com',
@@ -14,8 +14,8 @@ global.APIKeys = { // APIKey Here
 }
 
 // Sticker WM
-global.packname = 'Here'
-global.author = 'Violet'
+global.packname = 'Bot'
+global.author = 'Megane'
 
 global.multiplier = 69 // The higher, The harder levelup
 
