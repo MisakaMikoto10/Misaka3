@@ -387,7 +387,7 @@ Untuk mematikan fitur ini, ketik
 global.dfail = (type, m, conn, usedPrefix) => {
   let msg = {
     rowner: 'Perintah ini hanya dapat digunakan oleh _*Master*_',
-    owner: 'Perintah ini hanya dapat digunakan oleh _*Owner*_!',
+    owner: 'Perintah ini hanya dapat digunakan oleh _*Megane*_!',
     mods: 'Perintah ini hanya dapat digunakan oleh _*Moderator*_ !',
     premium: 'Perintah ini hanya untuk member _*Premium*_ !',
     player: 'Perintah ini hanya untuk para  _*Player*_ !',
