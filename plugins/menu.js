@@ -55,7 +55,7 @@ const defaultMenu = {
 ┃ ❖ *Uptime:* _%uptime_ (%muptime)
 ┃ ❖ *Database:* %rtotalreg of %totalreg
 ┃ ❖ *Contact:*
-┃     [62887436568613]
+┃     [6285780372455]
 ┗ ┅ ━━━━━━━━━━━━━━━━━━━━ ┅ ━
 %readmore
 ┏ ┅ ━━━━━━━━━━━━━━━━━━━━ ┅ ━
@@ -67,6 +67,8 @@ const defaultMenu = {
 ┃ ❖ Ariffb
 ┃ ❖ RC047
 ┃ ❖ Kokoronationz
+┃ ❖ NTODERS
+┃ ❖ UNX
 ┃ ❖ Dan Kawan-kawan
 ┗ ┅ ━━━━━━━━━━━━━━━━━━━━ ┅ ━
 `.trimStart(),
@@ -116,7 +118,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
     if (process.send) {
       process.send('uptime')
       _muptime = await new Promise(resolve => {
-        process.once('message', resolve)
+        process.once('message', resolve) 
         setTimeout(resolve, 1000)
       }) * 1000
     }
