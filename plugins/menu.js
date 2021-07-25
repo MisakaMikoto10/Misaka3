@@ -50,7 +50,7 @@ const defaultMenu = {
 ┃ ❖ *Hari:* %week %weton
 ┃ ❖ *Tanggal:* %date
 ┃ ❖ *Tanggal Islam:* %dateIslamic
-┃ ❖ *Waktu:* %time WITA
+┃ ❖ *Waktu:* %time WIB
 ┃
 ┃ ❖ *Uptime:* _%uptime_ (%muptime)
 ┃ ❖ *Database:* %rtotalreg of %totalreg
@@ -81,8 +81,8 @@ ${'```%npmdesc```'}
 let handler = async (m, { conn, usedPrefix: _p }) => {
   try {
     let package = JSON.parse(await fs.promises.readFile(path.join(__dirname, '../package.json')).catch(_ => '{}'))
-    let violet = './src/photo/VioGarden.png'
-    let unx = 'https://github.com/unx21'
+    let violet = './src/photo/ToumaDragon2.jpg'
+    let Misaka = 'https://github.com/MisakaMikoto10'
     //let premium = global.prems.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
     let tnbot = (await conn.getFile(await conn.getProfilePicture(m.fromMe))).data.toString('base64')
     let { name, uang, exp, limit, level } = global.DATABASE.data.users[m.sender]
