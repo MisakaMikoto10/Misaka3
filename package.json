@@ -1,5 +1,5 @@
 {
-  "name": "Misaka Bot",
+  "name": "Misaka",
   "version": "2.1.2",
   "description": "Megane bot",
   "depecrated": false,
@@ -25,7 +25,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MisakaMikoto10/Misaka3.git"
+    "url": "git+https://github.com/Nurutomo/wabot-aq.git"
   },
   "bugs": {
     "url": "https://github.com/Nurutomo/wabot-aq/issues"
