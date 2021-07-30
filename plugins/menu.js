@@ -83,7 +83,7 @@ ${'%npmdesc'}
 let handler = async (m, { conn, usedPrefix: _p }) => {
   try {
     let package = JSON.parse(await fs.promises.readFile(path.join(_dirname, '../package.json')).catch( => '{}'))
-    let violet = './src/photo/To.Aru.Majutsu.no.Index:.Imaginary.Fest.full.2806272.jpg'
+    let violet = './src/photo/MiiMii.png'
     let Misaka = 'https://github.com/MisakaMikoto10'
     //let premium = global.prems.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
     let tnbot = (await conn.getFile(await conn.getProfilePicture(m.fromMe))).data.toString('base64')
