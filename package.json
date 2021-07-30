@@ -1,7 +1,7 @@
 {
-  "name": "Violet",
+  "name": "Misaka Bot",
   "version": "2.1.2",
-  "description": "U n x  Loyal Couple",
+  "description": "Megane bot",
   "depecrated": false,
   "main": "index.js",
   "directories": {
@@ -19,13 +19,13 @@
     "whatsapp",
     "js-whatsapp"
   ],
-  "homepage": "https://github.com/unx21/violet",
+  "homepage": "https://github.com/MisakaMikoto10/Misaka3",
   "author": {
-    "name": "unx"
+    "name": "Megane"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Nurutomo/wabot-aq.git"
+    "url": "git+https://github.com/MisakaMikoto10/Misaka3.git"
   },
   "bugs": {
     "url": "https://github.com/Nurutomo/wabot-aq/issues"
