@@ -10,11 +10,11 @@ global.APIs = { // API Prefix
 }
 global.APIKeys = { // APIKey Here
   // 'https://website': 'apikey'
-  'https://api.xteam.xyz': '22c0b4a47404ec7b'
+  'https://api.xteam.xyz': 'a1b5d2e7a93c7f8'
 }
 
 // Sticker WM
-global.packname = 'Bot'
+global.packname = 'Misaka Bot'
 global.author = 'Megane'
 
 global.multiplier = 69 // The higher, The harder levelup
