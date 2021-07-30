@@ -47,20 +47,20 @@ let handler = async (m, { conn, text }) => {
     }
     let end;
     if (a == b == c == d == e) {
-        end = "JACKPOT";
+        end = "*ANDA MENGJACKPOT*";
         hasil = `Win With 3 Thing Common +Rp${jackpot}`;
         gcha = `${v[0]} | ${w[0]} | ${x[0]} | ${y[0]} | ${z[0]}\n${v[0]} | ${w[0]} | ${x[0]} | ${y[0]} | ${z[0]}\n${v[1]} | ${w[1]} | ${x[1]} | ${y[1]} | ${z[1]} <=== ${end}\n${v[1]} | ${w[1]} | ${x[1]} | ${y[1]} | ${z[1]}\n${v[2]} | ${w[2]} | ${x[2]} | ${y[2]} | ${z[2]}`;
         global.DATABASE._data.users[m.sender].uang += jackpot
         await conn.fakeReply(m.chat, `[ 🎰 VIRTUAL SLOT 🎰 ]\n\n${gcha}\n\n*[ 🎰 VIRTUAL SLOT 🎰 ]*`, '0@s.whatsapp.net', `${hasil}`, 'status@broadcast')
 
     } else if (a == b || a == c || d == c || d == e || e == a) {
-        end = "YOU WIN";
+        end = "*SELAMAT!*";
         hasil = `Win With 2 Things Common +Rp${win}`;
         gcha = `${v[0]} | ${w[0]} | ${x[0]} | ${y[0]} | ${z[0]}\n${v[0]} | ${w[0]} | ${x[0]} | ${y[0]} | ${z[0]}\n${v[1]} | ${w[1]} | ${x[1]} | ${y[1]} | ${z[1]} <=== ${end}\n${v[1]} | ${w[1]} | ${x[1]} | ${y[1]} | ${z[1]}\n${v[2]} | ${w[2]} | ${x[2]} | ${y[2]} | ${z[2]}`;
         global.DATABASE._data.users[m.sender].uang += win
         await conn.fakeReply(m.chat, `[ 🎰 VIRTUAL SLOT 🎰 ]\n\n${gcha}\n\n*[ 🎰 VIRTUAL SLOT 🎰 ]*`, '0@s.whatsapp.net', `${hasil}`, 'status@broadcast')
     } else {
-        end = "YOU LOSE";
+        end = "*YAHAHA KALAH*";
         hasil = `Hopefully You Are lucky Next -Rp${uang}`;
         gcha = `${v[0]} | ${w[0]} | ${x[0]} | ${y[0]} | ${z[0]}\n${v[0]} | ${w[0]} | ${x[0]} | ${y[0]} | ${z[0]}\n${v[1]} | ${w[1]} | ${x[1]} | ${y[1]} | ${z[1]} <=== ${end}\n${v[1]} | ${w[1]} | ${x[1]} | ${y[1]} | ${z[1]}\n${v[2]} | ${w[2]} | ${x[2]} | ${y[2]} | ${z[2]}`;
         global.DATABASE._data.users[m.sender].uang -= uang
