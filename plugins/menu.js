@@ -5,7 +5,6 @@ let tags = {
   'main': 'Main',
   'xp': 'Exp & Limit',
   'sticker': 'Sticker',
-  'islamic': 'Islamic',
   'weebs': 'Weebs',
   'expression': 'Expression',
   'game': 'Game',
@@ -22,10 +21,10 @@ let tags = {
   'admin': 'Admin',
   'audio': 'Audio',
   'group': 'Group',
+  'absen': 'Absen',
   'tools': 'Tools',
   'jadibot': 'Jadi Bot',
   'premium': 'Premium Menu',
-  'player': 'Player',
   'owner': 'Owner',
   'host': 'Host',
   'database': 'Database',
@@ -36,30 +35,30 @@ let tags = {
 const defaultMenu = {
   before: `
 ┏ ┅ ━━━━━━━━━━━━━━━━━━━━ ┅ ━
-┇       「 %me 」
+┇       *「 %me 」*
 ┣ ┅ ━━━━━━━━━━━━━━━━━━━━ ┅ ━
 ┃
 ┃ ❖ Hai %name!
 ┃
-┃ ❖ Name: %name
-┃ ❖ Level: %level (%exp / %maxexp)
-┃ ❖ EXP: %totalexp XP
-┃ ❖ Saldo: Rp%saldo
-┃ ❖ Limit: %limit
+┃ ❖ *Name:* %name
+┃ ❖ *Level:* %level (%exp / %maxexp)
+┃ ❖ *EXP:* %totalexp XP
+┃ ❖ *Saldo:* Rp%saldo
+┃ ❖ *Limit:* %limit
 ┃
-┃ ❖ Hari: %week %weton
-┃ ❖ Tanggal: %date
-┃ ❖ Tanggal Islam: %dateIslamic
-┃ ❖ Waktu: %time WIB
+┃ ❖ *Hari:* %week %weton
+┃ ❖ *Tanggal:* %date
+┃ ❖ *Tanggal Islam:* %dateIslamic
+┃ ❖ *Waktu:* %time WIB
 ┃
-┃ ❖ Uptime: %uptime (%muptime)
-┃ ❖ Database: %rtotalreg of %totalreg
-┃ ❖ Contact:
-┃     [6285780372455]
+┃ ❖ *Uptime:* _%uptime_ (%muptime)
+┃ ❖ *Database:* %rtotalreg of %totalreg
+┃ ❖ *Owner:*
+┃      [085780372455]
 ┗ ┅ ━━━━━━━━━━━━━━━━━━━━ ┅ ━
 %readmore
 ┏ ┅ ━━━━━━━━━━━━━━━━━━━━ ┅ ━
-┇       「 Thanks to 」
+┇       *「 Thanks to 」*
 ┣ ┅ ━━━━━━━━━━━━━━━━━━━━ ┅ ━
 ┃ ❖ Nurutomo
 ┃ ❖ St4rz
@@ -67,24 +66,24 @@ const defaultMenu = {
 ┃ ❖ Ariffb
 ┃ ❖ RC047
 ┃ ❖ Kokoronationz
-┃ ❖ NTODERS
-┃ ❖ UNX
+┃ ❖ Unx
+┃ ❖ Megane
 ┃ ❖ Dan Kawan-kawan
 ┗ ┅ ━━━━━━━━━━━━━━━━━━━━ ┅ ━
 `.trimStart(),
-  header: '┏ ┅ ━━━━━━━━━━━━━━━━━━━━ ┅ ━\n┇       「 %category 」\n┣ ┅ ━━━━━━━━━━━━━━━━━━━━ ┅ ━',
+  header: '┏ ┅ ━━━━━━━━━━━━━━━━━━━━ ┅ ━\n┇       *「 %category 」*\n┣ ┅ ━━━━━━━━━━━━━━━━━━━━ ┅ ━',
   body: '┃ ❖  %cmd %islimit %isPremium',
   footer: '┗ ┅ ━━━━━━━━━━━━━━━━━━━━ ┅ ━\n',
   after: `
-%npmname@^%version
-${'%npmdesc'}
+*%npmname@^%version*
+${'```%npmdesc```'}
 `,
 }
 let handler = async (m, { conn, usedPrefix: _p }) => {
   try {
-    let package = JSON.parse(await fs.promises.readFile(path.join(_dirname, '../package.json')).catch( => '{}'))
-    let violet = './src/photo/MiiMii.png'
-    let Misaka = 'https://github.com/MisakaMikoto10'
+    let package = JSON.parse(await fs.promises.readFile(path.join(__dirname, '../package.json')).catch(_ => '{}'))
+    let ciel = './src/photo/MiiMii.png'
+    let unknownnzx = 'https://github.com/MisakaMikoto10'
     //let premium = global.prems.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
     let tnbot = (await conn.getFile(await conn.getProfilePicture(m.fromMe))).data.toString('base64')
     let { name, uang, exp, limit, level } = global.DATABASE.data.users[m.sender]
@@ -181,7 +180,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     //conn.reply(m.chat, text.trim(), m)
-    await conn.sendFile(m.chat, violet, 'Violet Evergarden.png', text.trim(), { 
+    await conn.sendFile(m.chat, ciel, 'Ciel.jpeg', text.trim(), { 
       key: { 
         remoteJid: 'status@broadcast', 
         participant: '0@s.whatsapp.net', 
@@ -211,7 +210,7 @@ handler.mods = false
 handler.premium = false
 handler.group = false
 handler.private = false
-handler.register = true
+handler.register = false
 
 handler.admin = false
 handler.botAdmin = false
